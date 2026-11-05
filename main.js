@@ -192,11 +192,11 @@ const brickTexture = loadTexture("brick.png");
 const normalTexture = loadTexture("texture2.jpg");
 const animatedTexture = loadTexture("rickAstley.gif");
 
-const BUMP_MAPPING = 0, NORMAL_MAPPING = 1;
+const BUMP_MAPPING = 0, NORMAL_MAPPING = 1, ANIMATED_MAPPING = 2;
 const objects = [
   { mesh: sphereMesh, texture: brickTexture, mapping: BUMP_MAPPING, offset: [-1.8, 0, 0] },
   { mesh: torusMesh, texture: normalTexture, mapping: NORMAL_MAPPING, offset: [1.8, 0, 0] },
-  { mesh: cubeMesh, texture: animatedTexture, mapping: NORMAL_MAPPING, offset: [0, 2.0, 0]}
+  { mesh: cubeMesh, texture: animatedTexture, mapping: ANIMATED_MAPPING, offset: [0, 2.0, 0]}
 ];
 
 gl.enable(gl.DEPTH_TEST);
